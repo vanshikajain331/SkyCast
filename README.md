@@ -1,5 +1,5 @@
 # Weather-App
-Live Demo:https://vanshikajain331.github.io/Weather-Web-App/
+Link:https://vanshikajain331.github.io/Weather-Web-App/
 This web application allows users to fetch weather data for a specific city using the OpenWeatherMap API. The app is built using HTML, CSS, and JavaScript.
 
 ## Table of Contents
