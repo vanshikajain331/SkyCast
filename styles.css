@@ -1,0 +1,254 @@
+*, *::before, *::after{
+    font-family: 'Oswald', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    letter-spacing: 2px;
+}
+
+/* -----------TAB CONTAINER---------- */
+.tab.current-tab{
+    background-color: rgba(255, 255, 255, 0.488);
+    border-radius: 4px;
+}
+
+:root{
+    --colorDark1: #112D4E;
+    --colorDark2: #3F72AF;
+    --colorLight1: #DBE2EF;
+    --colorLight2: #F9F7F7;
+}
+
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    color: var(--colorLight2);
+    background: linear-gradient(156deg, rgba(1, 58, 103, 1) 47%, rgba(66, 97, 193, 1) 100%);
+}
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    padding: 20px;
+}
+
+.tabContainer{
+    display: flex;
+    max-width: 600px;
+    width: 90%;
+    margin-top: 5rem;
+
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.tab{
+    cursor: pointer;
+    font-size: 0.85rem;
+    letter-spacing: 1.75px;
+    padding: 5px 8px;
+}
+
+.weather-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-block: 4rem; 
+}
+
+.btn{
+    background-color: var(--colorDark2);
+    border: none;
+    padding: 8px 30px;
+    border-radius: 5px;
+    font-size: 0.88rem;
+    text-transform: uppercase;
+    color: #DBE2EF;
+    letter-spacing: 2px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.sub-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* ----------GRANT ACCESS LOCATION--------- */
+.grant-location-container{
+   display: none;
+}
+
+.grant-location-container.active{
+    display: flex;
+}
+
+.grant-location-container img{
+    margin-bottom: 2rem;
+}
+
+.grant-location-container p:first-of-type{
+    font-size: 1.75rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+}
+
+.grant-location-container p:last-of-type{
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+}
+
+/* -----------LOADER----------- */
+.loading-container{
+    display: none;
+}
+
+.loading-container.active{
+    display: flex;
+}
+
+.loading-container p{
+    text-transform: uppercase;
+}
+
+/* ---------SHOW WEATHER INFO(USER-INFO-CONTAINER)------- */
+.user-info-container{
+    display: none;
+}
+.user-info-container.active{
+    display: flex;
+}
+
+.name{
+    display: flex;
+    justify-content: space-between;
+    gap: 0 0.5rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.user-info-container p{
+    font-size: 1rem;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+}
+
+.user-info-container img{
+    width: 80px;
+    height: 80px;
+}
+
+.user-info-container> .name p{
+    font-size: 1.9rem;
+    font-weight: 400;
+}
+
+.user-info-container> .name img{
+    height: 40px;
+    width: 40px;
+}
+
+.user-info-container p[data-temp] {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.user-info-container > .parameter-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px 20px;
+    width: 50%;
+}
+
+/* ----------------media-queries----------------------- */
+@media screen and (max-width: 500px) {
+    .parameter-container {
+      display: flex;
+      flex-direction: column;
+    }
+    .parameter{
+        width: 180px;
+        position: relative;
+        left: -6rem;
+    }
+}
+
+.parameter{
+    margin-top: 2rem;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.488);
+    border-radius: 5px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.parameter img{
+    height: 100px;
+    width: 100px;
+}
+
+.parameter p{
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+/* -------SEARCH WEATHER----- */
+.form-container{
+    display: none;
+    width: 90%;
+    max-width: 550px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    gap: 0 10px;
+    margin-bottom: 3rem;
+}
+
+.form-container.active{
+    display: flex;
+}
+
+.form-container input[data-userInput]{
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.488);
+    color: var(--colorLight1);
+    border: none;
+    padding: 0 20px;
+    border-radius: 10px;
+    height: 40px;
+    font-size: 1rem;
+}
+
+.form-container input::placeholder{
+    color: var(--colorLight1);
+    font-weight: 500;
+}
+.form-container input:focus{
+   outline: 2px solid var(--colorLight1);
+}
+
+/* --------btn------- */
+.form-container .btn{
+    position: relative;
+    top: 0.3rem;
+    display: flex;
+    height: 40px;
+    width: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    padding: unset;
+}
