@@ -1,5 +1,13 @@
 ## SkyCast-Your Personalized Weather Companion
-This web application allows users to fetch weather data for a specific city using the OpenWeatherMap API. The app is built using HTML, CSS, JavaScript and React.
+This web application allows users to fetch weather data for a specific city using the OpenWeatherMap API.
+SkyCast is an intuitive and dynamic weather web app built using React.js and JavaScript, designed to provide real-time weather updates with a user-friendly interface. Leveraging powerful APIs, SkyCast delivers accurate forecasts, temperature trends, and climate insights for locations worldwide.
+
+Key Features:
+🌍 Global Weather Insights: Get real-time weather updates for any city across the globe.
+⛅ Detailed Forecasts: Displays temperature, humidity, wind speed, and weather conditions in a clear, organized format.
+🎯 Search Functionality: Easily search and view weather data for different locations.
+🌗 Dynamic UI: Interactive visuals with weather-themed backgrounds for enhanced user experience.
+⚡ Fast and Responsive: Built with React.js for seamless performance across devices.
 
 ## Table of Contents
 
