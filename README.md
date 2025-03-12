@@ -1,4 +1,4 @@
-## Weather-Web App
+## SkyCast-Your Personalized Weather Companion
 This web application allows users to fetch weather data for a specific city using the OpenWeatherMap API. The app is built using HTML, CSS, and JavaScript.
 
 ## Table of Contents
